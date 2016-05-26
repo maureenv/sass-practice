@@ -1,0 +1,65 @@
+@import "profile"; //to import partial
+
+$bg-color: black;
+$hover-color: #16a885;
+$text-color: #ffffff;
+
+$primary-color: green; // now whenever I want to add green to something I do:
+
+
+// if I ever want to change everything to red, I can just change the green to red and everything in my page will change as well
+
+h1{
+  color: $primary-color;
+}
+
+
+/////////////// nesting
+nav {
+    ul{ // only apply these styles if I'm inside nav bar
+      background: $bg-color;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    li{
+      display: inline-block;
+    }
+
+    a{
+      color: $text-color;
+      display: inline-block;
+      padding: 10px 16px;
+      text-decoration: none;
+    }
+
+    a:hover{
+      background-color: $hover-color;
+    }
+}
+
+
+///////////////// EXTEND
+// if something shares almost the same general styling use extend keyword. It allows you to use CSS inside other rules.
+
+.panel{
+  // this class will have shared property among all panels
+  border: 3px solid blue;
+  background-color: lightgreen;
+  margin: 10px;
+}
+
+// now little panel and big panel will inherit properties from .panel
+
+.little-panel{
+  @extend .panel;
+  font-size: 20px;
+  padding: 5px;
+}
+
+.big-panel{
+  @extend .panel;
+  font-size: 30px;
+  padding: 20px;
+}
