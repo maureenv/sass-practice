@@ -49,18 +49,37 @@ html {
     -o-background-size: cover;
     background-size: cover; } }
 
-.masthead-img {
+.masthead {
+  overflow: hidden;
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  background-color: #033e66; }
+
+.masthead-bg {
+  opacity: 0.3;
   top: 0;
   right: 0;
   width: 100%;
   height: 90vh;
-  position: absolute;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/home-hero-small.jpg") no-repeat center center fixed;
+  position: relative;
+  background: url("../images/home-hero-small.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.image-2 {
+  height: 500px;
+  width: 33%;
+  background: url("../images/325-Lex-AD-E7-UNCROPPED.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  z-index: -2; }
+  float: left;
+  background-width: 33%;
+  position: relative; }
 
 .button, .jumbo-button, .light-button {
   background: #123456;
