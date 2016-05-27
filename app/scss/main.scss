@@ -1,6 +1,5 @@
-
-
-
+@import "reset";
+@import "legacy-browser.scss";
 
 .masthead-img{
 top: 0;
@@ -19,24 +18,27 @@ background-size: cover;
 z-index: -2;
 }
 
-@media all and (min-width:0\0) and (min-resolution:.001dpcm)
-{
-    .masthead-img {top: 0;
-    right: 0;
-    width: 100%;
-    height: 90vh;
-    position: absolute;
-    background: url('../images/home-hero-small.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    z-index: -2; }
-}
 
 
 
-@import "profile"; //to import partial
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 $bg-color: black;
 $hover-color: #16a885;

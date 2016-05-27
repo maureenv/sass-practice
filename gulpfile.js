@@ -10,7 +10,7 @@ gulp.task('task-name', function(){
 
 
 gulp.task('sass', function(){
-  return gulp.src('app/scss/styles.scss')
+  return gulp.src('app/scss/main.scss')
     .pipe(sass()) //refering to var sass
     .pipe(gulp.dest('app/css'))
 })
