@@ -62,9 +62,16 @@ body {
   float: left;
   outline: 1px solid black; }
 
+.background {
+  float: left;
+  width: 500px;
+  height: 500px;
+  background: url("../images/home-hero-small.jpg");
+  position: relative; }
+
 .background1 {
+  float: left;
   width: 500px;
   height: 500px;
   background: linear-gradient(rgba(3, 62, 102, 0.75), rgba(3, 62, 102, 0.75)), url("../images/home-hero-small.jpg");
-  position: relative;
-}
+  position: relative; }
