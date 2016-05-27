@@ -9,10 +9,49 @@ $primary-color: green; // now whenever I want to add green to something I do:
 
 // if I ever want to change everything to red, I can just change the green to red and everything in my page will change as well
 
-h1{
-  color: $primary-color;
+////////////// MIXINS
+
+@mixin border-radius{ // take this code and mix it into something else
+  -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+    border-radius: 5px;
 }
 
+// or if you don't want a set 5px radius you can add parameter
+@mixin radius($radius){
+  -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+////////////// OPERATIONS
+$buttonBackground: #123456;
+$buttonColor: white;
+$buttonPadding: 5px;
+
+.button{
+  background: $buttonBackground;
+  border-radius: 8px;
+  color: $buttonColor;
+  display: inline-block;
+  padding: $buttonPadding;
+  text-decoration: none;
+
+}
+
+.jumbo-button{
+  @extend .button;
+  padding: $buttonPadding + 30; // don't need to type px because padding on button already says pixel
+}
+
+.light-button{
+  @extend .button;
+  background: $buttonBackground * 0.3; // when you multiply a color by greater than one it lightens it, less than 1 darkens it
+
+  // this works well for hover effects, just make image a little lighter on hovers
+}
 
 /////////////// nesting
 nav {
@@ -40,6 +79,7 @@ nav {
 }
 
 
+
 ///////////////// EXTEND
 // if something shares almost the same general styling use extend keyword. It allows you to use CSS inside other rules.
 
@@ -56,10 +96,38 @@ nav {
   @extend .panel;
   font-size: 20px;
   padding: 5px;
+  @include radius(10px); // mixin is included here
 }
 
 .big-panel{
   @extend .panel;
   font-size: 30px;
   padding: 20px;
+}
+
+
+
+/////////////// COLOR TESTS
+body {
+  background: rgba(green, .5); // you can type color name directioy into RGBA in SASS
+}
+
+
+.box {
+  width: 200px;
+  padding: 10px;
+  float: left;
+  outline: 1px solid black;
+}
+
+.background1{
+  width: 500px;
+  height: 500px;
+  background:
+  linear-gradient(
+     rgba(255, 0, 0, 0.45),
+     rgba(255, 0, 0, 0.45)
+   ),
+   /* bottom, image */
+   url('../images/home-hero-small.jpg');
 }

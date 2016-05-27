@@ -4,8 +4,19 @@
   height: 60px;
   border: 5px solid seagreen; }
 
-h1 {
-  color: green; }
+.button, .jumbo-button, .light-button {
+  background: #123456;
+  border-radius: 8px;
+  color: white;
+  display: inline-block;
+  padding: 5px;
+  text-decoration: none; }
+
+.jumbo-button {
+  padding: 35px; }
+
+.light-button {
+  background: #05101a; }
 
 nav ul {
   background: black;
@@ -32,8 +43,28 @@ nav a:hover {
 
 .little-panel {
   font-size: 20px;
-  padding: 5px; }
+  padding: 5px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px; }
 
 .big-panel {
   font-size: 30px;
   padding: 20px; }
+
+body {
+  background: rgba(0, 128, 0, 0.5); }
+
+.box {
+  width: 200px;
+  padding: 10px;
+  float: left;
+  outline: 1px solid black; }
+
+.background1 {
+  width: 500px;
+  height: 500px;
+  background: linear-gradient(rgba(3, 62, 102, 0.75), rgba(3, 62, 102, 0.75)), url("../images/home-hero-small.jpg");
+  position: relative;
+}
