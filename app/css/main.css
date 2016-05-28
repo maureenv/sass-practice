@@ -143,8 +143,9 @@ body, h1, h2, h3, h4, div, p {
   background: rgba(20, 65, 86, 0.8); }
 
 .button-style, .button {
-  width: 200px;
+  width: 250px;
   height: 50px;
+  padding-right: 50px;
   line-height: 50px;
   color: #1aa2de;
   border: 2px solid #1aa2de;
@@ -155,10 +156,9 @@ body, h1, h2, h3, h4, div, p {
 
 .button {
   margin: auto;
-  margin-top: 40px; }
-  .button .button a {
-    text-decoration: none; }
-  .button .button:after {
+  margin-top: 40px;
+  display: inline-block; }
+  .button:after {
     content: "";
     width: 50px;
     height: 50px;
