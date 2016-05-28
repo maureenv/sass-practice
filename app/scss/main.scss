@@ -110,23 +110,23 @@ $buttonBackground: #123456;
 $buttonColor: white;
 $buttonPadding: 5px;
 
-.button{
-  background: $buttonBackground;
-  border-radius: 8px;
-  color: $buttonColor;
-  display: inline-block;
-  padding: $buttonPadding;
-  text-decoration: none;
-
-}
+// .button{
+//   background: $buttonBackground;
+//   border-radius: 8px;
+//   color: $buttonColor;
+//   display: inline-block;
+//   padding: $buttonPadding;
+//   text-decoration: none;
+//
+// }
 
 .jumbo-button{
-  @extend .button;
+
   padding: $buttonPadding + 30; // don't need to type px because padding on button already says pixel
 }
 
 .light-button{
-  @extend .button;
+
   background: $buttonBackground * 0.3; // when you multiply a color by greater than one it lightens it, less than 1 darkens it
 
   // this works well for hover effects, just make image a little lighter on hovers

@@ -1,0 +1,40 @@
+.button-bg{
+  background: rgba(20, 65, 86, 0.8);
+}
+
+.button-style{
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  color: $text-blue;
+  border: 2px solid $text-blue;
+  font-weight: $bold;
+  font-size: 13px;
+  text-transform: uppercase;
+  text-align: center;
+
+}
+
+.button{
+  @extend .button-style;
+  @extend .button-bg;
+  margin: auto;
+  margin-top: 40px;
+  
+    .button a{
+      text-decoration: none;
+    }
+
+    .button-arrow{
+      background: url('../images/carret.svg') no-repeat center center;
+      width: 50px;
+      height: 50px;
+      display: inline-block;
+      background-size: 35px 35px;
+      background-color: $text-blue;
+      position: absolute;
+      margin-top: -2px;
+      margin-left: 20px;
+    }
+
+}

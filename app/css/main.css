@@ -31,6 +31,9 @@ body {
 ol, ul {
   list-style: none; }
 
+a {
+  text-decoration: none; }
+
 html {
   box-sizing: border-box; }
 
@@ -136,6 +139,36 @@ body, h1, h2, h3, h4, div, p {
   .main-nav {
     background: #0d212b; } }
 
+.button-bg, .button {
+  background: rgba(20, 65, 86, 0.8); }
+
+.button-style, .button {
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  color: #1aa2de;
+  border: 2px solid #1aa2de;
+  font-weight: 700;
+  font-size: 13px; }
+
+.button {
+  text-transform: uppercase;
+  text-align: center;
+  margin: auto;
+  margin-top: 40px; }
+  .button .button a {
+    text-decoration: none; }
+  .button .button-arrow {
+    background: url("../images/carret.svg") no-repeat center center;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background-size: 35px 35px;
+    background-color: #1aa2de;
+    position: absolute;
+    margin-top: -2px;
+    margin-left: 20px; }
+
 /* styling for header content */
 .masthead {
   position: relative; }
@@ -192,14 +225,6 @@ body, h1, h2, h3, h4, div, p {
   float: left;
   background-width: 33%;
   position: relative; }
-
-.button, .jumbo-button, .light-button {
-  background: #123456;
-  border-radius: 8px;
-  color: white;
-  display: inline-block;
-  padding: 5px;
-  text-decoration: none; }
 
 .jumbo-button {
   padding: 35px; }
