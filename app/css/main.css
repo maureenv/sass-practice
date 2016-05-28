@@ -118,6 +118,19 @@ body, h1, h2, h3, h4, div, p {
   .main-nav .contact a {
     color: #1aa2de;
     border: 1px solid #1aa2de; }
+  .main-nav .logo {
+    background: url("../images/logo-secondary.png") no-repeat;
+    width: 100px;
+    height: 100px;
+    background-size: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: auto;
+    margin-top: 10px; }
+  .main-nav .home-link {
+    padding: 0px;
+    border: none; }
 
 /* styling for header content */
 .masthead {

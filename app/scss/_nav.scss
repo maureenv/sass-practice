@@ -66,4 +66,21 @@
     border: 1px solid $text-blue;
   }
 
+  .logo {
+    background: url('../images/logo-secondary.png') no-repeat;
+    width: 100px;
+    height: 100px;
+    background-size: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: auto;
+    margin-top: 10px;
+  }
+
+  .home-link{
+    padding: 0px;
+    border: none;
+  }
+
 }
