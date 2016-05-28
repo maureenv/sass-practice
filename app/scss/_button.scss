@@ -25,29 +25,18 @@
       text-decoration: none;
     }
 
-    // .button-arrow{
-    //   background: url('../images/carret.svg') no-repeat center center;
-    //   width: 50px;
-    //   height: 50px;
-    //   display: inline-block;
-    //   background-size: 35px 35px;
-    //   background-color: $text-blue;
-    //   position: absolute;
-    //   margin-top: -2px;
-    //   margin-left: 20px;
-    // }
+    &:after{
+      content: "";
+      width: 50px;
+      height: 50px;
+      margin-top: -2px;
+      margin-left: 20px;
+      background: url('../images/carret.svg') no-repeat center center;
+      background-size: 35px 35px;
+      background-color: $text-blue;
+      display: inline-block;
+      position: absolute;
+    }
 
-}
 
-.button:after{
-  content: "";
-  width: 50px;
-  height: 50px;
-  margin-top: -2px;
-  margin-left: 20px;
-  background: url('../images/carret.svg') no-repeat center center;
-  background-size: 35px 35px;
-  background-color: $text-blue;
-  display: inline-block;
-  position: absolute;
 }
