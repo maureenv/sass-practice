@@ -1,0 +1,39 @@
+@import url(href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,700');
+
+$mainfont:'Titillium Web', sans-serif;
+
+/* colors */
+$text-lightblue: #ade1f9;
+$text-blue: #1aa2de;
+$text-darkblue: #0b3d62;
+$text-white: #fff;
+$text-gray: #6c7379;
+
+/* font-size */
+$title-size: 32px;
+$paragraph-size: 18px;
+
+/* font-weight */
+$light: 300;
+$normal: 400;
+$bold: 700;
+
+body, h1, h2, h3, h4, div, p {
+  font-family: $mainfont;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; /* for firefox font */
+}
+
+// operations for text
+.title{
+  font-size: $title-size;
+  font-weight: $light;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.paragraph{
+  font-size: $paragraph-size;
+  font-weight: $normal;
+  line-height: 1.4;
+}
