@@ -20,21 +20,30 @@
   @extend .button-bg;
   margin: auto;
   margin-top: 40px;
-  
+
     .button a{
       text-decoration: none;
     }
 
-    .button-arrow{
-      background: url('../images/carret.svg') no-repeat center center;
-      width: 50px;
-      height: 50px;
-      display: inline-block;
-      background-size: 35px 35px;
-      background-color: $text-blue;
-      position: absolute;
-      margin-top: -2px;
-      margin-left: 20px;
-    }
+    // .button-arrow{
+    //   background: url('../images/carret.svg') no-repeat center center;
+    //   width: 50px;
+    //   height: 50px;
+    //   display: inline-block;
+    //   background-size: 35px 35px;
+    //   background-color: $text-blue;
+    //   position: absolute;
+    //   margin-top: -2px;
+    //   margin-left: 20px;
+    // }
 
+}
+
+.button:after{
+  content: "";
+  width: 50px;
+  height: 50px;
+  background-color: $text-blue;
+  display: inline-block;
+  position: absolute;
 }
