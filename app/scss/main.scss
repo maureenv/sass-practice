@@ -132,29 +132,29 @@ $buttonPadding: 5px;
 }
 
 /////////////// nesting
-nav {
-    ul{ // only apply these styles if I'm inside nav bar
-      background: $bg-color;
-      margin: 0;
-      padding: 0;
-      list-style: none;
-    }
-
-    li{
-      display: inline-block;
-    }
-
-    a{
-      color: $text-color;
-      display: inline-block;
-      padding: 10px 16px;
-      text-decoration: none;
-    }
-
-    a:hover{
-      background-color: $hover-color;
-    }
-}
+// nav {
+//     ul{ // only apply these styles if I'm inside nav bar
+//       background: $bg-color;
+//       margin: 0;
+//       padding: 0;
+//       list-style: none;
+//     }
+//
+//     li{
+//       display: inline-block;
+//     }
+//
+//     a{
+//       color: $text-color;
+//       display: inline-block;
+//       padding: 10px 16px;
+//       text-decoration: none;
+//     }
+//
+//     a:hover{
+//       background-color: $hover-color;
+//     }
+// }
 
 
 
