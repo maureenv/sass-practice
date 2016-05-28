@@ -45,7 +45,8 @@
   height: 50px;
   margin-top: -2px;
   margin-left: 20px;
-
+  background: url('../images/carret.svg') no-repeat center center;
+  background-size: 35px 35px;
   background-color: $text-blue;
   display: inline-block;
   position: absolute;
