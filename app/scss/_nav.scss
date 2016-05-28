@@ -84,3 +84,11 @@
   }
 
 }
+
+@media all and (min-width:0\0) and (min-resolution:.001dpcm)
+{ // for ie9
+    .main-nav {
+      background: rgba(13,33,43,1); 
+    }
+
+}
